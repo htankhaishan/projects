@@ -32,19 +32,6 @@ const TAB_DATA = [
         ),
     },
     {
-        title: "Security",
-        id: "security",
-        content: (
-          <ul className="list-disc pl-2">
-            <li>Penetration Testing</li>
-            <li>Basic EDR Deployment</li>
-            <li>SOC</li>
-            <li>Snort</li>
-            <li>Solana Hyperdrive</li>
-          </ul>
-        ),
-    },
-    {
         title: "Education",
         id: "education",
         content: (
@@ -81,14 +68,6 @@ const AboutMe = () => {
                         </TabButton>
                         
                         <TabButton 
-                        selectTab={() => handleTabChange("security")}
-                        active= {tab === "security"}
-                        >
-                            {" "}
-                            Security{" "}
-                        </TabButton>
-
-                        <TabButton 
                         selectTab={() => handleTabChange("experiences")}
                         active= {tab === "experiences"}
                         >
@@ -109,17 +88,17 @@ const AboutMe = () => {
                 </div>
                 <div className="mx-3 mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h1 className="font-bold mb-4 text-transparent bg-clip-text sm:text-3xl md:text-4xl bg-gradient-to-r from-indigo-500 via-pink-500 to-orange-400">About Me</h1>
-                    <p className="text-base text-justify">Currently pursuing a BSc in Computer Science (Cyber Security) at ASIA PACIFIC UNIVERSITY. Experienced in freelance web development and administrative roles. Passionate about  
+                    <p className="text-base text-justify">I am currently pursuing a BSc in Computer Science (Cyber Security) at ASIA PACIFIC UNIVERSITY. With experience in freelance web development and administrative roles, I have embarked on a journey into  
                     <span style={{ color: '#eb7be1', fontWeight: 'bold' }}> Swift</span>{' '}
                     and 
-                    <span style={{ color: '#a688fa', fontWeight: 'bold' }}> IOS development</span>,{' '}
-                    aiming to deepen expertise in this field. I am always looking for new opportunities and feel free to contact me. I will get back to you as soon as possible.
+                    <span style={{ color: '#a688fa', fontWeight: 'bold' }}> IOS development</span>{' '}
+                    since December 2023. My passion drives me to deepen my expertise in this field. Always on the lookout for new opportunities, feel free to contact me, and I will respond as promptly as possible.
                     </p>
                     <div className=" flex flex-row gap-4 mt-6">
-                        <Link href="#github">
+                        <Link href="https://github.com/htankhaishan">
                             <img src="/icons/github-icon.svg" alt="Github Icon" />
                         </Link>
-                        <Link href="#linkedin">
+                        <Link href="https://linkedin.com/in/kyawhtetthu">
                             <img src="/icons/linkedin-icon.svg" alt="Linkedin Icon" />
                         </Link>
                         <Link href="mailto:htankhaishan@gmail.com">
